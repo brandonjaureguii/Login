@@ -91,6 +91,7 @@ p {
 	width: 100%;
 	border: none;
 	color: #Fff;
+	cursor: pointer;
 }
 .btn-twt button {
 	background: linear-gradient(90deg, rgba(0,130,203,1) 21%, rgba(0,215,255,1) 100%);
@@ -100,11 +101,71 @@ p {
 
 }
 i {
-	margin-right: 20px;
-	margin-left: -190px;
+	padding-left: -300px;
 	font-size: 20px;
+	padding-right: 20px;
 }
 .fa-facebook-f {
-	margin-left: -170px;
-	margin-right: 25px;
+	
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1050px) {
+	.container {
+	  width: 800px;
+	  margin-top: calc(50vh - 350px);
+	}
+	.left-div {
+		height: 700px;
+	}
+	.right-div {
+		height: 700px;
+	}	
+	.continue-btn, .btn-twt button, .btn-fc button, input  {
+		height: 60px;
+	}
+	input {
+		font-size: 19px;
+	}
+	.btn-twt button, .btn-fc button  {
+		margin-bottom: 20px;
+	}
+	.right-content {
+		padding-top: 70px;
+	}
+}
+
+
+
+@media screen and (max-width: 900px) {
+	body {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		
+	}
+	.container {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0px;
+		height: 100vh;
+		width: 100vw;
+	}
+	.left-div {
+		width: 100vw;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0px;
+		border-radius: 0px;
+	}
+	.right-div {
+		width: 100vw;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 20px;
+		border-radius: 0px;
+	}
+	.titulo {
+		font-size: 40px;
+	}
+	input {
+		font-size: 21px;
+	}
+  } 
